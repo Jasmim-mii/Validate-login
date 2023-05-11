@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />		<link
+			rel="stylesheet"
+			href="./css/style.css" />
+		<title>Tela de login</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="img-plano">
+				<img
+					src="./img/img.png"
+					alt="" />
+			</div>
+			<div class="forms">
+				<h1>Cadastre-se em nosso sistema</h1>
+				<form
+					id="register-form"
+					action=""
+					method="">
+					<div class="full-box">
+						<label for="email">E-mail:</label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							data-required
+							data-email-validate
+							placeholder="Digite seu email" />
+					</div>
+					<div class="half-box spacing">
+						<label for="first_name">Nome:</label>
+						<input
+							type="text"
+							name="first_name"
+							id="first_name"
+							placeholder="Digie seu nome"
+							data-min-length="4"
+							data-only-letters
+							data-required />
+					</div>
+					<div class="half-box spacing">
+						<label for="last_name">Sobrenome:</label>
+						<input
+							type="text"
+							name="last_name"
+							id="last_name"
+							placeholder="Digite seu sobrenome"
+							data-min-length="4"
+							data-only-letters
+							data-required />
+					</div>
+					<div class="half-box spacing">
+						<label for="password">Senha:</label>
+						<input
+							type="password"
+							name="password"
+							id="password"
+							placeholder="Digite sua senha"
+							data-min-length="8"
+							data-password-validate
+							data-required />
+					</div>
+					<div class="half-box spacing">
+						<label for="verify-password">Confirmar a senha:</label>
+						<input
+							type="password"
+							name="verify-password"
+							id="verify-password"
+							placeholder="Confirma sua senha"
+							data-min-length="8"
+							data-equal="password"
+							data-password-validate
+							data-required />
+					</div>
+					<div class="checkbox">
+						<input
+							type="checkbox"
+							name="agreement"
+							id="agreement" 
+							/>
+						<span id="agreement-label"
+							>eu li e aceito os termos de uso
+							<a
+								href="message.html"
+								target="_blank"
+								>Politica de privacidade</a
+							>
+						</span>
+					</div>
+					<div class="full-box">
+						<input
+							id="btn-submit"
+							type="submit"
+							value="Finalizar cadastro" />
+					</div>
+
+				</form>
+			</div>
+		</div>
+		<p class="error-validation template"></p>
+		<script src="./js/script.js"></script>
+	</body>
+</html>

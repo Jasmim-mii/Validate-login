@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  color: #535353;
+  border: none;
+}
+
+body {
+  height: 100vh;
+}
+
+input, label {
+  display: block;
+  width: 100%;
+}
+input:focus, label:focus {
+  outline: none;
+}
+
+a {
+  color: #fc643a;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 2fr));
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 3rem;
+  padding: 3rem;
+}
+.container .img-plano img {
+  height: 30rem;
+}
+.container .forms {
+  box-shadow: 0.1rem 0.1rem 0.9rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
+  padding: 2rem;
+  width: 100%;
+}
+.container .forms h1 {
+  color: #303030;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.container .forms form .full-box {
+  display: block;
+  position: relative;
+}
+.container .forms form .half-box {
+  display: inline-block;
+  position: relative;
+}
+.container .forms form .spacing {
+  margin-right: 2.5%;
+}
+.container .forms form label {
+  font-size: 0.89rem;
+  font-weight: 600;
+}
+.container .forms form input {
+  border-bottom: 0.15rem solid #535353;
+  margin-bottom: 2.5rem;
+  padding: 0.9rem;
+}
+.container .forms form input:focus {
+  border-color: #fc643a;
+}
+.container .forms form input[type=submit] {
+  background: #fc643a;
+  color: white;
+  font-weight: 800;
+  border: none;
+  margin-top: 1.2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.container .forms form .checkbox {
+  display: flex;
+  margin-bottom: 2.5rem;
+}
+.container .forms form .checkbox #agreement {
+  width: 5%;
+  margin-bottom: 0;
+}
+.container .forms form .checkbox #agreement-label {
+  font-size: 0.8rem;
+  padding-left: 0.8rem;
+  font-weight: 600;
+}
+
+.error-validation {
+  color: #fc643a;
+  position: absolute;
+  top: 4.2rem;
+  font-size: 0.8rem;
+}
+
+i {
+  color: #1d9000;
+  position: absolute;
+}
+
+.template {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

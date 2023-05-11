@@ -1,0 +1,96 @@
+@import '_mixin.sass'
+@import '_global.sass'
+
+
+.container
+    @include grid(5rem)
+    align-content: center
+    justify-items: center
+    height: 100%
+    width: 100%
+    padding: 0 3rem
+    padding: 3rem  
+
+    // .content
+    //     @include grid(5rem)
+    //     align-content: center
+    //     justify-items: center
+    //     box-shadow: 0.1rem  0.1rem .9rem rgba(0, 0, 0, 0.2)
+    //     border-radius: .8rem
+
+
+    .img-plano
+      img
+        height: 30rem
+
+    .forms
+        // background: #f4f4f4
+        box-shadow: 0.1rem  0.1rem .9rem rgba(0, 0, 0, 0.2)
+        border-radius: .8rem
+        padding: 2rem
+        width: 100%
+
+        h1
+            color: $color-dark-500
+            font-size: 1.6rem
+            text-align: center
+            margin-bottom: 2.5rem
+
+        form   
+            
+            .full-box
+                display: block
+                position: relative
+                
+            .half-box
+                display: inline-block
+                position: relative
+
+            .spacing
+                margin-right: 2.5%
+            label
+                font-size: .89rem
+                font-weight: 600
+            input
+                border-bottom: .15rem solid $color-dark-300
+                margin-bottom: 2.5rem
+                padding: .9rem
+
+                &:focus
+                    border-color: $second-500
+            input[type='submit']
+                background: $second-500
+                color: $color-white
+                font-weight: 800
+                border: none
+                margin-top: 1.2rem
+                border-radius: .2rem
+                cursor: pointer
+            .checkbox
+                display: flex
+                margin-bottom: 2.5rem
+        
+                #agreement
+                   width: 5%
+                   margin-bottom: 0
+                        
+                #agreement-label
+                    font-size: .8rem
+                    padding-left: .8rem
+                    font-weight: 600
+           
+// validação
+.error-validation
+    color: $second-500
+    position: absolute
+    top: 4.2rem
+    font-size: .8rem
+i
+    color: #1d9000
+    position: absolute
+
+  
+
+.template
+    display: none
+
