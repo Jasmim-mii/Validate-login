@@ -1,2 +1,1 @@
-# validate logini
 # validate-login
